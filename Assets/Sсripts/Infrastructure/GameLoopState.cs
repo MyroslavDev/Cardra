@@ -1,9 +1,9 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameLoopState : IGameState
 {
     private GameStateMachine _stateMachine;
+    private RoundStateMachine _roundStateMachine;
 
     public GameLoopState(GameStateMachine stateMachine)
     {
@@ -13,8 +13,14 @@ public class GameLoopState : IGameState
     public void Enter()
     {
         Debug.Log("Игра началась!");
-        // Тут запускается игровой процесс
+
+        var roundMachine = new RoundStateMachine();
+        roundMachine.StartRound();
+
+        var actionButton = GameObject.FindObjectOfType<PlayerActionButton>();
+        actionButton.Init(roundMachine);
     }
+
 
     public void Exit()
     {
