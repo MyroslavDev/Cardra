@@ -1,0 +1,44 @@
+# ========== UNITY PROJECT ==========
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+sysinfo.txt
+
+# Rider / VS / VSCode IDE
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# ========== UNITY CACHE ==========
+*.apk
+*.unitypackage
+*.aab
+
+# ========== CRASH / GENERATED ==========
+*.stackdump
+*.crash
+
+# ========== OS SPECIFIC ==========
+.DS_Store
+Thumbs.db
+
+# ========== PACKAGE MANAGER ==========
+Packages/PackagesCache/
+Packages/com.unity.package-manager*
+
+# ========== ADDRESSABLES ==========
+/ServerData/
