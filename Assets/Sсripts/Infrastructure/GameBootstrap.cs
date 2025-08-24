@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameBootstrap : MonoBehaviour
 {
@@ -7,7 +6,7 @@ public class GameBootstrap : MonoBehaviour
 
     private void Start()
     {
-        _stateMachine = new GameStateMachine();
+        _stateMachine = new GameStateMachine(this);
         _stateMachine.ChangeState<EntryPointState>();
     }
 }

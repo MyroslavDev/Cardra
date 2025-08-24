@@ -12,11 +12,10 @@ public class EntryPointState : IGameState
 
     public void Enter()
     {
-        Debug.Log("Entry Point: загрузка меню или стартовых экранов...");
-        // Тут можно показать меню, загрузочный экран и т.д.
-        // Для примера: сразу идем в игру
-        _stateMachine.ChangeState<GameLoopState>();
+        Debug.Log("Entry Point: показываем меню или загрузочный экран...");
+        _stateMachine.ChangeState<LoadingState>();
     }
+
 
     public void Exit()
     {
